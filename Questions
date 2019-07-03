@@ -1,0 +1,23 @@
+
+1. Which class would you use to store your birthday in years, months, days,
+   seconds and nanoseconds?
+   
+   LocalDateTime
+   
+ 2. Given a random date, how would you find the date of a previous Thursday.
+ 
+ By accessing the DayOfWeek of the Date, then using a switch case on the DayOfWeek to
+ determine a integer corresponding to how many days since the last Thursday, 1 for Friday,
+ 2 for Saturday ... 7 for Thursday, then use that value as input to minusDays()
+ 
+ 3. What is the difference between a ZoneId and a ZoneOffset?
+ 
+ ZoneId's identify a given region with its specific timezone, while the ZoneOffset gives the offset of a
+ timezone with respect to Greenwich Mean Time (GMT).
+ 
+ 4. How would you convert an Instant to a ZonedDateTime? How would you convert a ZonedDateTime to an Instance?
+ 
+ An Instant can be converted to a ZonedDateTime using the atZone() method. A ZonedDateTime can be converted to 
+ an Instant by using the toInstant() method inherited from java.time.chrono.ChronoZonedDateTime.
+ 
+ 5. 
